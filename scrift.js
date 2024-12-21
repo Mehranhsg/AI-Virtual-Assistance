@@ -24,9 +24,9 @@ function wishMe() {
   }
 }
 
-// window.addEventListener("load", () => {
-//   wishMe();
-// });
+ window.addEventListener("load", () => {
+   wishMe();
+ });
 
 let speechRecognition =
   window.speechRecognition || window.webkitSpeechRecognition;
