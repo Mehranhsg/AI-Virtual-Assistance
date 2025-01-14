@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -22,22 +23,27 @@ body {
   border-radius: 50%;
   margin-top: 39px;
 }
+
 h1 {
   color: white;
   font-family: "Protest Guerrilla", sans-serif;
 }
+
 #name {
   color: rgb(52, 52, 189);
   font-size: 45px;
 }
+
 #va {
   color: rgb(117, 192, 114);
   font-size: 45px;
 }
+
 #voice {
   width: 150px;
   display: none;
 }
+
 #btn {
   width: 30%;
   background: linear-gradient(to right, rgb(206, 119, 119), blue);
@@ -50,9 +56,35 @@ h1 {
   border-radius: 20px;
   color: white;
   cursor: pointer;
-
   border: none;
 }
+
 #btn:hover {
   letter-spacing: 2px;
+}
+
+/* Mobile Friendly Media Query */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #logo {
+    width: 40vw; /* Adjust logo size on mobile */
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 30px; /* Adjust font size of h1 */
+  }
+
+  #name, #va {
+    font-size: 30px; /* Adjust font size for name and va */
+  }
+
+  #btn {
+    width: 60%; /* Make button width larger for smaller screens */
+    font-size: 18px; /* Adjust button font size */
+  }
 }
